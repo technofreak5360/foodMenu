@@ -33,7 +33,7 @@ export default class App extends Component {
 
         })
       })
-      .catch(error => console.log(error)) //to catch the errors if any
+      .catch(error => console.log(error))
 
   }
 
@@ -87,7 +87,6 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 20,
-    // textAlign: 'center',
     margin: 10,
   },
   head:
@@ -100,7 +99,5 @@ const styles = StyleSheet.create({
     width: "35%",
     backgroundColor: "red",
     marginLeft: "32%"
-
-
   }
 });

@@ -23,11 +23,6 @@ export default class App extends Component {
       dataSource: [],
     }
   }
-
-  // componentDidMount() {
-  //   this.getListCall();
-  // }
-
   getListCall() {
 
     fetch("https://jsonblob.com/api/jsonBlob/ecfad985-bc66-11ea-8cae-99a0660a95d6")
@@ -35,6 +30,7 @@ export default class App extends Component {
       .then((responseJson) => {
         this.setState({
           dataSource: responseJson
+
         })
       })
       .catch(error => console.log(error)) //to catch the errors if any
@@ -64,7 +60,6 @@ export default class App extends Component {
             onPress={this.getListCall}
           />
         </View>
-
         <FlatList
           data={this.state.dataSource}
           ItemSeparatorComponent={this.ItemSeparatorLine}

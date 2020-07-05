@@ -1,5 +1,5 @@
 # foodMenu
-2.set react-native environment
+2. set react-native environment
 3.copy app.js file replace it  with yours app.js file
 4.connect your phone with laptop and open developer mode of your phone and give required access
 5.open your project in command line
